@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+:root {
+  --font: "Newsreader", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+body {
+  background-color: rgb(197, 197, 196);
+}
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 15px;
+}
+img {
+  width: 50px;
+}
+.line {
+  width: 80%;
+  height: 3px;
+  background-color: black;
+  margin: 0 auto 20px auto;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+article {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  height: 300px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  gap: 15px;
+  padding: 30px;
+  background-color: rgb(215, 215, 215);
+  box-shadow: 5px 10px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  max-width: 50%;
+  border: 3px solid black;
+  background-color: rgb(197, 197, 196);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+.link:hover {
+  background-color: black;
+  color: rgb(215, 215, 215);
+  transition: all ease-in-out 300ms;
+}
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 150px;
+}
+button {
+  padding: 10px;
+  border: 3px solid black;
+  background-color: rgb(87, 87, 87);
+  color: rgb(201, 200, 200);
+  border-radius: 2px;
+  width: 150px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+button:hover {
+  background-color: rgb(215, 215, 215);
+  color: black;
+  transition: all ease-in-out 300ms;
+}
+
+#arrow:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out 300ms;
+}
+@media screen and (max-width: 600px) {
+  article {
+    grid-template-columns: 80%;
+  }
+}
