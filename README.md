@@ -2,7 +2,7 @@
 
 ![NewsInformationApp](src/img/screen-app.png "Screen of the app.")
 
-You can try her the app: [link](https://newsinformationapp.netlify.app)
+You can try here the app: [link](https://newsinformationapp.netlify.app)
 
 ## Description
 
